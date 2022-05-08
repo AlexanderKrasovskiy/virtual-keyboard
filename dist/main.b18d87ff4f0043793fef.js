@@ -1,1 +1,0 @@
-!function(){var e=document.createElement("h1");e.innerText="Test of Deploy",document.body.append(e)}();
