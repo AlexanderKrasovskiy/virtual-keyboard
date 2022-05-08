@@ -11,7 +11,9 @@ module.exports = {
   output: {
     filename: isDev ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, './dist'),
-    clean: true,
+    clean: {
+      keep: /\.git/,
+    },
     assetModuleFilename: 'assets/[hash][ext][query]',
   },
   devtool: isDev ? 'eval-source-map' : false,
