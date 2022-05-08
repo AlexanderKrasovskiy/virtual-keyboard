@@ -33,6 +33,11 @@
   cursor: pointer;
 }
 
+.keyboard__key.pushed {
+  transform: scale(0.98, 0.95);
+  opacity: 0.8;
+}
+
 .Tab,
 .CapsLock,
 .ShiftLeft,
@@ -149,9 +154,4 @@
 .hidden,
 .keycap.hidden {
   display: none;
-}
-
-.pushed {
-  transform: scale(0.98, 0.95);
-  opacity: 0.9;
 }
